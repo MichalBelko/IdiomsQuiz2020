@@ -1,0 +1,84 @@
+// COLOR VARIABLES
+$color-purple: #df77ff;
+$color-turquise: #0ff7c9;
+$color-pink: #ff3cec;
+
+.header {
+  background: linear-gradient(
+    45deg,
+    $color-purple,
+    $color-turquise,
+    $color-pink
+  );
+  background-size: 400% 400%;
+  animation: effect 10s infinite;
+  -webkit-animation: effect 10s infinite;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+
+  grid-row: 1 / 6;
+  grid-column: 1 / -1;
+
+  @media only screen and (max-width: 1000px) {
+    grid-row: 1 / 7; // This
+  }
+
+  display: grid;
+  grid-template-rows: repeat(20, minmax(5vh, min-content));
+  grid-template-columns: repeat(12, minmax(8.4vw, min-content));
+
+  @keyframes effect {
+    0% {
+      background-position: 0% 25%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 25%;
+    }
+  }
+
+  &__overview {
+    grid-column: 3 / span 8;
+
+    @media only screen and (max-width: 510px) {
+      grid-column: 2 / span 10;
+    }
+
+    &--heading {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--text {
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+
+      @media only screen and (max-height: 400px) and (max-width: 700px) {
+        display: none;
+      }
+
+      @media only screen and (max-height: 380px) and (max-width: 800px) {
+        display: none;
+      }
+
+      @media only screen and (max-width: 750px) {
+        font-size: 2.5rem;
+      }
+
+      @media only screen and (max-width: 630px) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (max-width: 320px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
