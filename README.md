@@ -7,7 +7,7 @@
 
 ---
 
-**This is our first project**. Languages and tools we used: 
+**This is our first project**. Languages and tools that have been used there: 
 
 * Html
 * Css 
