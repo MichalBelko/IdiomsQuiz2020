@@ -1,6 +1,6 @@
 # Best English Idiom Quiz  
 
----► https://idioms-quiz-for-2020.github.io/IdiomsQuiz/ ◄---  
+---► https://michalbelko.github.io/IdiomsQuiz2020/. ◄---  
 
 ### Created by two programming enthusiasts from _Slovakia_ 
 [Michal Belko](https://www.instagram.com/_michal.belko_/) and [Martin Lauff](https://www.instagram.com/mato_157/).    
